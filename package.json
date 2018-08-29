@@ -24,5 +24,6 @@
     "node-spotify-api": "^1.0.7",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
-  }
+  },
+  "devDependencies": {}
 }

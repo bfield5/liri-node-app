@@ -22,9 +22,9 @@ function music() {
       });
 }
 
-function concert() {
-    "https://rest.bandsintown.com/artists/" + searchFor+ "/events?app_id=codingbootcamp"
-}
+// function concert() {
+//     "https://rest.bandsintown.com/artists/" + searchFor+ "/events?app_id=codingbootcamp"
+// }
 
 function movie() {
     var apiSearch;
