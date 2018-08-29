@@ -22,9 +22,15 @@ function music() {
       });
 }
 
-// function concert() {
-//     "https://rest.bandsintown.com/artists/" + searchFor+ "/events?app_id=codingbootcamp"
-// }
+function concert() {
+    spotify.search({ type: 'track', query: searchFor, limit:1 }, function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
+    "https://rest.bandsintown.com/artists/" + searchFor + "/events?app_id=codingbootcamp"
+
+    });
+}
 
 function movie() {
     var apiSearch;
@@ -64,9 +70,9 @@ switch (action) {
     music();
     break;
 
-    // case "concert-this":
-    // concert();
-    // break;
+    case "concert-this":
+    concert();
+    break;
 }
      
 
